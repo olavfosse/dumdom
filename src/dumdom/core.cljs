@@ -23,7 +23,10 @@
                       snabbdom/attributesModule
                       snabbdom/propsModule
                       snabbdom/styleModule
-                      snabbdom/datasetModule]))
+                      snabbdom/datasetModule]
+                 js/undefined
+                 #js {"experimental"
+                      #js {"fragments" true}}))
 
 (defn set-root-id [element]
   (set! (.. ^js element -dataset -dumdomId) (swap! element-id inc)))
